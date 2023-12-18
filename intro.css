@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@0,800;1,900&family=Poppins:wght@800;900&display=swap');
+
+*{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: cadetblue;
+}
+main{
+    padding: 150px;
+}
+.main-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    padding: 20px;
+}
+.left p{
+    padding: 20px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.right img{
+    /* border: solid 10px darkcyan; */
+    border-radius: 100px 10px 100px 0px;
+}
+.right i{
+    position: absolute;
+    right: 140px;
+    top: 340px;
+    background-color: darkcyan;
+    border-radius: 100%;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.right i:hover{
+    transition: .4s;
+    background-color: aliceblue;
+    color: darkcyan;
+}
+.right a{
+    color: aliceblue;
+}
+button{
+    display: none;
+}
+
+span{
+    color: lightcyan;
+}
+#day{
+    color: aliceblue;
+}
+#waw{
+    background-color: lightcyan;
+    color: darkcyan;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 769px) {
+
+    main{
+        padding: 10px;
+    }
+    .main-flex{
+        flex-direction: column;
+    }
+    
+
+    .left p{
+        text-align: end;
+    }
+
+    .right{
+        flex-direction: column;
+    }
+    .right img{
+        border-radius: 50px;
+    }
+    .right i{
+        border-radius: 10px;
+        padding: 10px 250px 10px 250px;
+        position: unset;
+    }
+    .right a{
+        margin: 50px 50px 25px 50px;
+    }
+
+}
